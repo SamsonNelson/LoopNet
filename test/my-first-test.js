@@ -13,6 +13,15 @@ client
     })
     .refresh()
     .click('//*[@id="placardSec"]/div[2]/div[1]/article[1]/div[1]/section[1]/div/div/div/div/div[2]/div/figure')
+    .getText('/html/body/section/main/section/div/div/div/div/aside/div/div/div[1]/div/section[2]/div[2]/div/div/div/div[2]/div[1]/div/div/h4/a/span[1]').then(function(text) {
+      console.log(text);
+    })
+    .getText('/html/body/section/main/section/div/div/div/div/aside/div/div/div[1]/div/section[2]/div[2]/div/div/div/div[2]/div[1]/div/div/h4/a/span[2]').then(function(text) {
+      console.log(text);
+    })
+    .getText('/html/body/section/main/section/div/div/div/div/aside/div/div/div[1]/div/section[2]/div[2]/div/div/div/div[2]/div[1]/div/div/h4/p/a').then(function(text) {
+      console.log(text);
+    })
     .getText('/html/body/section/main/section/div/div/div/div/div/section[1]/div/div/div').then(function(text) {
       console.log(text);
     })
